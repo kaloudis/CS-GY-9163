@@ -1,0 +1,23 @@
+{
+  "name": "document-app",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node index.js",
+    "client": "cd client && npm start",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.11",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "jest": "^23.6.0"
+  },
+  "engines": {
+    "node": "9.10.1",
+    "npm": "6.x"
+  }
+}
