@@ -151,8 +151,6 @@ if (cluster.isMaster) {
             const originalName = req.file.originalname;
             const targetName = req.body.filename.split(".")[0] || originalName.split(".")[0];
 
-            /*
-            for XSS demonstration purposes - do not include this check here
             // only alphanumeric and underscore characters allowed
             const allowedCharacters = /^[a-zA-Z0-9_]*$/g;
 
@@ -171,7 +169,6 @@ if (cluster.isMaster) {
                     .contentType('text/plain')
                     .end(JSON.stringify(invalidCharMessage));
             }
-            */
 
             if (!invalidCharacters) {
                 // check if file already exists

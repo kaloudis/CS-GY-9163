@@ -38,11 +38,7 @@ export default class ImagePane extends Component {
                     </Col>
                 </Row>
                 {displayImage && <Row>
-                    <div
-                        dangerouslySetInnerHTML={{
-                            __html: `<img alt="${image.fileName}" src="/uploaded/${image.fileName}" />`
-                        }}
-                    />
+                    <img alt={image.fileName} src={`/uploaded/${image.fileName}`} />
                 </Row>}
             </div>
         )
