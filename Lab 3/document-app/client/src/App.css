@@ -1,0 +1,79 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+}
+
+.App-header {
+    background-color: white;
+    max-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-top: 10px;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.buttons {
+    display: block;
+    height: 50px;
+}
+
+.document-pane {
+    border-style: solid;
+    padding: 15px 17px;
+    overflow: hidden;
+    min-height: 100px;
+    border-width: 1px;
+    border-color: black;
+    margin-bottom: 50px;
+}
+
+.document-name {
+    font-size: 25px;
+}
+
+.document-controls {
+    margin-top: 35px;
+}
+
+.document-button {
+    background-color: rgba(206, 222, 253, 1);
+    cursor: pointer;
+    padding: 10px 0;
+    min-width: 60px;
+    color: black;
+}
+
+.document-name {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.upload-button {
+    background-color: rgba(206, 222, 253, 1);
+    color: black;
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    padding: 12px 10px;
+    float: right;
+    font-size: 25px;
+}
+
+.SearchForm {
+    background-color: lightgrey;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
